@@ -1,10 +1,15 @@
 let acertos = 0;
 let erros = 0;
+let fundamental = 0;
+let sentido = 0;
+let natureza = 0;
+let intervalo = 0;
+
+createNewInterval();
 
 function acerto() {
     acertos++;
     document.getElementById("acertos").innerText = acertos;
-    document.getElementById("nota1").play();
 }
 
 function erro() {
@@ -18,19 +23,16 @@ function randomNumber(min, max) {
     return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function play() {
-    let fundamental = randomNumber(5, 20);
-    console.log("fundamental: " + fundamental);
-    let sentido = randomNumber(1, 2);
-    console.log("sentido: " + sentido);
-    let natureza = randomNumber(1, 2);
-    console.log("natureza: " + natureza);
+function createNewInterval() {
+
+    fundamental = randomNumber(5, 20);
+    sentido = randomNumber(1, 2);
+    natureza = randomNumber(1, 2);
+    intervalo = fundamental;
 
     let nota1 = document.getElementById("nota1");
     nota1.src = "./notas/" + fundamental + ".mp3";
     nota1.load();
-
-    let intervalo = fundamental;
 
     if (sentido === 1) {
         intervalo -= natureza;
@@ -41,13 +43,33 @@ function play() {
     let nota2 = document.getElementById("nota2");
     nota2.src = "./notas/" + intervalo + ".mp3";
     nota2.load();
+    console.log("fundamental: " + fundamental);
+    console.log("intervalo: " + intervalo);
+
+}
+
+function play() {
 
     document.getElementById("nota1").play();
     setTimeout(() => {document.getElementById("nota2").play();}, 1500)
 }
 
+function verificaResposta(resposta) {
+    if (resposta === natureza) {
+        acerto();
+    } else {
+        erro();
+    }
+}
 
-
-document.getElementById("maior").onclick = acerto;
-document.getElementById("menor").onclick = erro;
+document.getElementById("maior").onclick = function () {
+    verificaResposta(2);
+    createNewInterval();
+    play();
+}
+document.getElementById("menor").onclick = function () {
+    verificaResposta(1);
+    createNewInterval();
+    play();
+}
 document.getElementById("play").onclick = play;
