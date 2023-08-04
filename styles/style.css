@@ -1,0 +1,68 @@
+:root {
+    --cor-bg: #272829;
+    --cor-texto: #FFF6E0;
+    --cor-botao: #484b54;
+    --cor-botao-hover: #696c6f;
+    --cor-botao-click: #97999c;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-bg);
+    color: var(--cor-texto);
+}
+
+.cabecalho {
+    text-align: center;
+    padding: 2em 6em;
+}
+
+.secao_principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.placar {
+    padding: 1em 6em;
+    display: flex;
+    justify-content: space-around;
+}
+
+.placar_texto {
+    padding: 0em 0.5em;
+}
+
+.placar_numero {
+    padding-right: 1em;
+}
+
+.botao {
+    background-color: var(--cor-botao);
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background-color: var(--cor-botao-hover);
+}
+
+.botao:active {
+    background-color: var(--cor-botao-click);
+}
+
+.botao_play {
+    padding: 1em 5em;
+}
+
+.resposta {
+    padding: 2em 6em 1em 6em;
+    display: flex;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+.botao_resposta {
+    padding: 1em 2em;
+}

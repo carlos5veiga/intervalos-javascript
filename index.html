@@ -3,11 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Intervalos</title>
+    <link rel="stylesheet" href="./styles/style.css">
+
 </head>
 <body>
-    <header></header>
-    <main></main>
+    <header class="cabecalho">
+        <h1>Segundas Maiores e Menores</h1>
+        <h2>Desenvolvido por Carlos Veiga Filho</h2>
+    </header>
+    <main>
+        <section class="secao_principal">
+            <div class="placar">
+                <h3 class="placar_texto">Acertos: </h3>
+                <h3 class="placar_numero" id="acertos">0</h3>
+                <h3 class="placar_texto">Erros: </h3>
+                <h3 class="placar_numero" id="erros">0</h3>
+            </div>
+            <button class="botao botao_play" id="play">Play</button>
+            <div class="resposta">
+                <button class="botao botao_resposta" id="maior">Segunda Maior</button>
+                <button class="botao botao_resposta" id="menor">Segunda Menor</button>
+            </div>
+        </section>
+    </main>
     <footer></footer>
+    <script src="js/segundas.js"></script>
 </body>
 </html>
