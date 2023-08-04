@@ -43,13 +43,9 @@ function createNewInterval() {
     let nota2 = document.getElementById("nota2");
     nota2.src = "./notas/" + intervalo + ".mp3";
     nota2.load();
-    console.log("fundamental: " + fundamental);
-    console.log("intervalo: " + intervalo);
-
 }
 
 function play() {
-
     document.getElementById("nota1").play();
     setTimeout(() => {document.getElementById("nota2").play();}, 1500)
 }
@@ -67,9 +63,11 @@ document.getElementById("maior").onclick = function () {
     createNewInterval();
     play();
 }
+
 document.getElementById("menor").onclick = function () {
     verificaResposta(1);
     createNewInterval();
     play();
 }
+
 document.getElementById("play").onclick = play;
