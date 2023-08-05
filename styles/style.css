@@ -1,19 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+
 :root {
-    --cor-bg: #272829;
+    --cor-bg: black;
     --cor-texto: #FFF6E0;
-    --cor-botao: #484b54;
+    --cor-botao: #36383e;
     --cor-botao-hover: #696c6f;
     --cor-botao-click: #97999c;
+    --cor-texto-cabecalho-rodape: yellow;
 }
 
 * {
     margin: 0;
     padding: 0;
     background-color: var(--cor-bg);
-    color: var(--cor-texto);
+
 }
 
 .cabecalho {
+    color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
     padding: 2em 6em;
 }
@@ -25,6 +29,7 @@
 }
 
 .placar {
+    color: var(--cor-texto);
     padding: 1em 6em;
     display: flex;
     justify-content: space-around;
@@ -39,16 +44,18 @@
 }
 
 .botao {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
     background-color: var(--cor-botao);
     border-radius: 10px;
     text-decoration: none;
 }
 
-.botao:hover {
+.botao:hover, .botao_ancora:hover {
     background-color: var(--cor-botao-hover);
 }
 
-.botao:active {
+.botao:active, .botao_ancora:active {
     background-color: var(--cor-botao-click);
 }
 
@@ -67,12 +74,23 @@
     padding: 1em 2em;
 }
 
+.botao_ancora {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: black;
+    background-color: var(--cor-botao);
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 1em 5em;
+}
+
 .imagem {
-    max-width: 15%;
+    max-width: 20em;
     padding: 1em;
 }
 
 .rodape {
+    color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
     padding: 2em 6em;
 }
@@ -93,6 +111,9 @@
     .resposta {
         padding: 1em;
     }
+    .imagem {
+        max-width: 18em;
+    }
 }
 
 @media (max-width: 360px) {
@@ -101,5 +122,8 @@
     }
     .rodape{
         padding: 1em;
+    }
+    .imagem {
+        max-width: 15em;
     }
 }
