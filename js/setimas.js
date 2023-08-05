@@ -24,10 +24,16 @@ function randomNumber(min, max) {
 }
 
 function createNewInterval() {
-
-    fundamental = randomNumber(5, 30);
+    
     sentido = randomNumber(1, 2);
-    natureza = randomNumber(1, 2);
+
+    if (sentido === 2) {
+        fundamental = randomNumber(1, 25);
+    } else {
+        fundamental = randomNumber(12, 36);
+    }
+    
+    natureza = randomNumber(10, 11);
     intervalo = fundamental;
 
     let nota1 = document.getElementById("nota1");
@@ -59,13 +65,13 @@ function verificaResposta(resposta) {
 }
 
 document.getElementById("maior").onclick = function () {
-    verificaResposta(2);
+    verificaResposta(11);
     createNewInterval();
     play();
 }
 
 document.getElementById("menor").onclick = function () {
-    verificaResposta(1);
+    verificaResposta(10);
     createNewInterval();
     play();
 }

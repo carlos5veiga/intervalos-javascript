@@ -27,7 +27,7 @@ function createNewInterval() {
 
     fundamental = randomNumber(5, 30);
     sentido = randomNumber(1, 2);
-    natureza = randomNumber(1, 2);
+    natureza = randomNumber(3, 4);
     intervalo = fundamental;
 
     let nota1 = document.getElementById("nota1");
@@ -59,13 +59,13 @@ function verificaResposta(resposta) {
 }
 
 document.getElementById("maior").onclick = function () {
-    verificaResposta(2);
+    verificaResposta(4);
     createNewInterval();
     play();
 }
 
 document.getElementById("menor").onclick = function () {
-    verificaResposta(1);
+    verificaResposta(3);
     createNewInterval();
     play();
 }
