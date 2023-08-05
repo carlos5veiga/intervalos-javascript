@@ -6,7 +6,7 @@
     --cor-botao: #36383e;
     --cor-botao-hover: #696c6f;
     --cor-botao-click: #97999c;
-    --cor-texto-cabecalho-rodape: yellow;
+    --cor-texto-cabecalho-rodape: #f6cb0b;
 }
 
 * {
@@ -44,8 +44,8 @@
 }
 
 .botao {
+    color: var(--cor-texto);
     font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
     background-color: var(--cor-botao);
     border-radius: 10px;
     text-decoration: none;
@@ -76,8 +76,7 @@
 
 .botao_ancora {
     font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    color: black;
+    color: var(--cor-texto);
     background-color: var(--cor-botao);
     border-radius: 10px;
     text-decoration: none;
