@@ -88,6 +88,13 @@
     padding: 1em;
 }
 
+.botoes_navegacao_conteiner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
 .rodape {
     color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
