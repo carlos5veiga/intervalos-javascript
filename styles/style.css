@@ -19,24 +19,40 @@
 .cabecalho {
     color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
-    padding: 2em 6em;
+    padding: 1em 6em 0em 6em;
 }
 
 .secao_principal {
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.zona1 {
+    padding: 2em 3em 0em 6em;
+    display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.zona2 {
+    padding: 3em 6em 0em 3em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
 }
 
 .placar {
     color: var(--cor-texto);
     padding: 1em 6em;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 1em;
 }
 
 .placar_texto {
-    padding: 0em 0.5em;
+    padding-left: 1em;
 }
 
 .placar_numero {
@@ -49,6 +65,7 @@
     background-color: var(--cor-botao);
     border-radius: 10px;
     text-decoration: none;
+    font-size: 110%;
 }
 
 .botao:hover, .botao_ancora:hover {
@@ -64,7 +81,7 @@
 }
 
 .resposta {
-    padding: 2em 6em 1em 6em;
+    padding: 1em 6em 1em 6em;
     display: flex;
     justify-content: space-around;
     gap: 3em;
@@ -85,7 +102,6 @@
 
 .imagem {
     max-width: 20em;
-    padding: 1em;
 }
 
 .botoes_navegacao_conteiner {
@@ -93,13 +109,41 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.5em;
+    gap: 1em;
 }
 
 .rodape {
     color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
     padding: 2em 6em;
+}
+
+@media (max-width: 1000px) {
+    .cabecalho {
+        padding: 1em;
+    }
+    .secao_principal {
+        flex-direction: column;
+    }
+    .zona1 {
+        padding: 0em 2em 0.5em 2em;
+    }
+    .placar {
+        padding: 0em 6em 1em 6em;
+    }
+    .zona2 {
+        padding: 0.5em 2em;
+        gap: 0em;
+    }
+    .botao {
+        font-size: 90%;
+    }
+    .botao_ancora {
+        font-size: 90%;
+    }
+    .rodape {
+        padding: 1em;
+    }
 }
 
 @media (max-width: 600px) {
