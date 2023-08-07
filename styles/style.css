@@ -13,7 +13,15 @@
     margin: 0;
     padding: 0;
     background-color: var(--cor-bg);
+}
 
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .cabecalho {
@@ -23,20 +31,21 @@
 }
 
 .secao_principal {
+    margin: 2% 10%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .zona1 {
-    padding: 2em 3em 0em 6em;
+    padding: 2em 3em 0em 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 .zona2 {
-    padding: 3em 6em 0em 3em;
+    padding: 3em 3em 0em 3em;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,6 +87,10 @@
 
 .botao_play {
     padding: 1em 5em;
+}
+
+#botao_conheca {
+    color: #f6cb0b;
 }
 
 .resposta {

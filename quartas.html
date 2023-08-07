@@ -12,8 +12,9 @@
         <h1>Quartas Justas e Aumentadas</h1>
         <h2>Desenvolvido por Carlos Veiga Filho</h2>
     </header>
-    <main>
-        <section class="secao_principal">
+    <main class="secao_principal">
+
+        <section class="zona1">
             <div class="placar">
                 <h3 class="placar_texto">Acertos: </h3>
                 <h3 class="placar_numero" id="acertos">0</h3>
@@ -25,19 +26,18 @@
                 <button class="botao botao_resposta" id="justa">Quarta Justa</button>
                 <button class="botao botao_resposta" id="aumentada">Quarta Aumentada</button>
             </div>
-            
-            <img src="./img/Scoreplay.png" class="imagem" alt="Imagem do curso Scoreplay">
-
-            <div class="botoes_navegacao_conteiner">
-                <a href="https://tutoriaisemmusica.com.br/scoreplay" class="botao_ancora">Conheça o curso</a>
-                <a href="./index.html" class="botao_ancora">Volte para a central</a>
-            </div>
-
         </section>
         
+        <section class="zona2">
+            <a href="https://tutoriaisemmusica.com.br/scoreplay" class="botao_ancora" id="botao_conheca">Conheça o curso</a>
+            <a href="https://tutoriaisemmusica.com.br/scoreplay" target="_blank"><img src="./img/Intervalos Musicais2.jpg" class="imagem" alt="Imagem do curso Scoreplay"></a>
+            <a href="./index.html" class="botao_ancora">Volte para a central</a>
+        </section>
+    
         <audio src="./notas/1.mp3" id="nota1"></audio>
         <audio src="./notas/2.mp3" id="nota2"></audio>
     </main>
+
     <footer class="rodape">
         <p>Copyright &copy; 2010-<script>
             var CurrentYear = new Date().getFullYear()
