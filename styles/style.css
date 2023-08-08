@@ -182,6 +182,9 @@ body {
     .rodape {
         padding: 1em;
     }
+    #title_segundas, #title_setimas {
+        font-size: 60%;
+    }
 }
 
 
