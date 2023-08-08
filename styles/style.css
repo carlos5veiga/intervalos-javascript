@@ -162,12 +162,14 @@ body {
 @media (max-width: 660px) {
     .cabecalho {
         padding: 1em;
+        font-size: 70%;
     }
     .placar {
         padding: 1em;
     }
     .resposta {
         padding: 1em;
+        gap: 0.5em;
     }
     .zona1 {
         padding: 1em;
