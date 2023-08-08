@@ -182,7 +182,10 @@ body {
     .rodape {
         padding: 1em;
     }
-    #title_segundas, #title_setimas {
+    #title_segundas {
+        font-size: 55%;
+    }
+    #title_setimas {
         font-size: 60%;
     }
 }
