@@ -27,8 +27,12 @@ body {
 .cabecalho {
     color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
+<<<<<<< HEAD
     padding: 1em 6em 0em 6em;
     margin-bottom: 1em;
+=======
+    padding: 1em 6em;
+>>>>>>> 48102bc091ed96668bbd0b613367881791e9c856
 }
 
 .secao_principal {
@@ -57,7 +61,7 @@ body {
 
 .placar {
     color: var(--cor-texto);
-    padding: 1em 6em;
+    padding: 1em 3em;
     display: flex;
     justify-content: center;
     gap: 1em;
@@ -168,10 +172,12 @@ body {
     }
     .placar {
         padding: 1em;
+        gap: .5em;
     }
     .resposta {
-        padding: 1em;
+        padding: .5em;
         gap: 0.5em;
+        flex-wrap: wrap;
     }
     .zona1 {
         padding: 1em;
@@ -183,12 +189,20 @@ body {
     .rodape {
         padding: 1em;
     }
-    #title_segundas {
-        font-size: 1.75em;
+
+    .botao_ancora {
+        padding: 1em 2em;
+        width: 80vw;
     }
-    #title_setimas {
-        font-size: 1.85em;
+
+    .placar_texto {
+        padding-left: .5em;
     }
+    
+    .placar_numero {
+        padding-right: .5em;
+    }
+    
 }
 
 
