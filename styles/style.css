@@ -28,6 +28,7 @@ body {
     color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
     padding: 1em 6em 0em 6em;
+    margin-bottom: 1em;
 }
 
 .secao_principal {
@@ -144,7 +145,7 @@ body {
 .rodape {
     color: var(--cor-texto-cabecalho-rodape);
     text-align: center;
-    padding: 2em 6em;
+    padding: 1em 6em;
 }
 
 
